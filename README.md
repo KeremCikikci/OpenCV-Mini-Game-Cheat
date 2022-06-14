@@ -30,3 +30,6 @@ When the player sits on the chair, the door closes and the game begins. Arriving
 The biggest rectangle, which fits in the tiles, are calculated. Secondly, screenshots of 3 rectangles are converted to HSV format. So that coins can be more easily distinguished from tiles. Moreover coins are deleted from the tile captures. Then the white pixels formed by deleting the coins are counted and if the white pixels are more than the specified number in all tile images, the mouse cursor is directed to the key and used. This process is repeated in a loop.
 
 
+Uploading video.mp4…
+
+
