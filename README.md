@@ -5,13 +5,21 @@ Thanks to this program, a mini game, which is a part of an online game where peo
 # Packets
 
 These Python libraries are used in the code:
+
 -pynput
+
 -opencv
+
 -numpy
+
 -PIL
+
 -pyautogui
+
 -keyboard
+
 -time
+
 
 # Folder Content
 
