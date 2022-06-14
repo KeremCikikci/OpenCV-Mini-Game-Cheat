@@ -1,0 +1,13 @@
+from pynput.mouse import Listener
+
+def on_move(x, y):
+    print("Mouse moved to ({0}, {1})".format(x, y))
+    
+
+def on_click(x, y, button, pressed):
+    if pressed:
+        print('Mouse clicked at ({0}, {1}) with {2}'.format(x, y, button))
+
+with Listener(on_move=on_move, on_click=on_click) as listener:
+    listener.join()
+
