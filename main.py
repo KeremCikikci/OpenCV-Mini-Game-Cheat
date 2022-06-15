@@ -48,7 +48,7 @@ minWhitePixels_door = 2000
 def goChair():
     while True:
         # Door 
-        _door = ImageGrab.grab(bbox=(DOOR[0][0], DOOR[0][1], DOOR[3][0], DOOR[3][1])) #x, y, w, h
+        _door = ImageGrab.grab(bbox=(doorBox[0][0], doorBox[0][1], doorBox[3][0], doorBox[3][1])) #x, y, w, h
         img_np = np.array(_door)
 
         # Resize Door
@@ -149,8 +149,6 @@ def playIt():
             cv2.imshow("Tiles", segmented_img)
         
         if keyboard.is_pressed('q'):
-            break
-        if cv2.waitKey(1) & 0Xff == ord('q'):
             break
 
 topLeftCorner = [int((DOOR[0][0] + DOOR[1][0]) / 2), int((DOOR[0][1] + DOOR[1][1]) / 2)]     # x, y
